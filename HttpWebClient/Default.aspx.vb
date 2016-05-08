@@ -62,7 +62,7 @@ Public Class _Default
 
         ' converteer result naar byte-array gebruikmakend van ut8-encoding
         Dim postData As Byte() = encoding.GetBytes(xmlString)
-        ' declareer httpwebrequestuet webrequest met de hierboven gedefiniëerde url
+        ' declareer Httpwebrequest-object met de hierboven gedefiniëerde url
         Dim webrequest As HttpWebRequest = DirectCast(HttpWebRequest.Create(url), HttpWebRequest)
         'set method as post
         webrequest.Method = "POST"
